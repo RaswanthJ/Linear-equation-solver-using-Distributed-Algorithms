@@ -1,0 +1,1 @@
+This folder contains all the files to be run from single raspberry Pi. Running this in the coordinator pi will send the files and run them in their respective Pi's and then sends back the results with the CSV files. We then plot them.
