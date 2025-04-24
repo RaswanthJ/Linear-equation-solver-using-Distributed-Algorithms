@@ -1,0 +1,10 @@
+sudo rm /etc/apt/sources.list.d/zerotier.list
+
+
+curl -s https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/zerotier.gpg > /dev/null
+
+
+echo "deb [signed-by=/usr/share/keyrings/zerotier.gpg] https://download.zerotier.com/debian/bullseye bullseye main" | sudo tee /etc/apt/sources.list.d/zerotier.list
+
+
+zerotier-cli info
